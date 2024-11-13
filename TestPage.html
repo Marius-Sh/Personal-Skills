@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="Styles/topbar.css">
+    <link rel="stylesheet" href="Styles/general.css">
+    <link rel="stylesheet" href="Styles/grid.css">
+    <title>SkillDisplayPage</title>
+</head>
+<body>
+    <div class="top-bar">
+        <!-- This Div will hold a dropdown list of items -->
+        <div class = "dropdown-container" style="background-color: aqua;">
+           <p>Item List #1</p>
+           <!-- This div is a dropdown list -->
+           <div class="dropdown-contents">
+                    <p>Item #1</p>
+                    <p>Item #2</p>
+                    <a title="This will get you to youtube.com" href="https://www.youtube.com">youtube</a>
+           </div>
+        </div>
+
+
+        <!-- This Div will hold a deropdown list of items but, list will appear once button is pressed-->
+        <div style="background-color: lightpink;">
+            <Button onclick="showOn()"  class="dropdown-button">
+                Item List #2 
+            </Button>
+            <div id="theDrop" class="dropdown-contents-from-button">
+                <p>Item #1</p>
+                <p>Item #2</p>
+                <a title="This will get you to youtube.com" href="https://www.youtube.com">youtube</a>
+            </div>
+        </div>
+
+
+        <!-- This div stretches -->
+         <div class="stretchbar" style="background-color: lightgreen;">
+           <p>Item that stretches</p> 
+         </div>
+         <!-- THis div holds a button with a tooltip -->
+         <div style="background-color: gold;">
+            <Button class="top-bar-button" title="This is a title but I call it a tooltip">
+                <p>Button with tooltip</p> 
+            </Button>
+         </div>
+        <script>
+            function showOn() {
+                    document.getElementById("theDrop").classList.toggle("show")
+            }
+        </script>
+    </div>
+    <div class = hugeBlock>
+        <p>Now this is huge</p>
+    </div>
+
+
+</body>
+</html>
